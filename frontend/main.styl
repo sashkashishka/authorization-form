@@ -1,0 +1,21 @@
+@require "./common.blocks"
+
+.body
+  background-color: #e8e8e8
+  margin 0
+
+.main-window
+  max-width 1100px 
+  height 100vh
+  margin: auto
+  display: flex
+  justify-content: center
+  align-items: center
+  @media all and (max-height: 600px)
+    align-items: flex-start
+  @media all and (max-width: 320px)
+    justify-content: flex-start
+  
+  
+@require "./login-window/login-window.styl";
+    

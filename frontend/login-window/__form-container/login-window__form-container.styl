@@ -1,0 +1,116 @@
+.login-window__form-container
+  display: flex
+  flex-wrap: wrap
+  width 50%
+  justify-content: center
+  border-left: 1px solid #cfcfcf
+  @media all and (max-width $screenWidth) 
+    border-left: none 
+    border-bottom: 1px solid #cfcfcf 
+    width 300px
+
+.login-window__form
+  width 300px
+  display: flex
+  flex-wrap: wrap
+  @media all and (max-width $screenWidth) 
+    margin-bottom: 24px
+
+.login-window__label
+  display: block
+  font-size: 14px
+  color: rgb(51, 51, 51);
+  font-weight: bold
+  position relative
+
+  &::after
+    content: attr(data-validity-msg)
+    position: absolute
+    font-size 10px
+    left 0
+    top: 64px
+
+.login-window__input
+  box-sizing: border-box
+  width 300px
+  height 40px
+  margin-bottom: 24px
+  margin-top 7px
+  border-radius: 3px
+  border 1px solid #ddd
+  padding: 0
+  padding-left: 10px
+
+
+
+.login-window__checkbox-remember-me  
+  margin 0 7px 0 0
+  width 12px
+  height 12px
+  appearance none
+  border-radius: 3px
+  background-color #dedede
+  border 1px solid #b2b2b2
+  position relative
+
+  &:checked
+    background-color #3b99fc
+    border 1px solid #2c91fc
+
+  &:checked::before
+    content: ""
+    position: absolute
+    width 6px
+    height 3px
+    border-left: 2px solid #fff
+    border-bottom: 2px solid #fff
+    top 1.5px
+    left 1px
+    transform: rotate(-45deg)
+  
+
+
+
+
+.login-window__link
+  color: rgb(101, 101, 101);
+  margin-top: 24px;
+  flex-grow: 1
+  text-align: end
+  align-self: center
+
+  &:hover
+    color rgb(68, 68, 68);
+
+
+
+.login-window__log-in-button
+  border-radius: 3px;
+  background-color: rgb(37, 37, 37);
+  font-size: 14px
+  color: #fff
+  border none
+  padding: 12px 30px
+  margin-top: 24px
+
+  &:hover
+    background-color: #666
+
+
+
+/* modificators */
+.login-window__link_size_s
+  font-size: 14px
+
+.login-window__label_width_max
+  width 100%
+
+.login-window__label_align-content_middle
+  display: flex 
+  line-height: 10px
+
+.link-window__label_no-valid-value
+  color: #b21913
+
+.login-window__input_no-valid-value
+  border-color: #b21913

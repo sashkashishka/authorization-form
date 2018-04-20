@@ -1,0 +1,27 @@
+
+
+.login-window__footer
+  width 100%
+  text-align: center
+  height $footerHeight
+  line-height: $footerHeight
+  @media all and (max-width $screenWidth)
+    height 85px
+    line-height: 85px 
+  
+
+/* 
+font-smoothing works on MacOs
+also this options isn`t part of CSS3Font spec
+*/
+.login-window__footer_sign-up
+  -webkit-font-smoothing: antialiased 
+  -moz-osx-font-smoothing: antialiased 
+  color: rgb(102, 102, 102);
+  font-size: 18px;
+
+.login-window__footer_link
+  color #000
+
+.login-window__footer_link_size_m
+  font-size: 18px

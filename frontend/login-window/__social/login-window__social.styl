@@ -1,0 +1,49 @@
+@require "../../pics/icons";
+
+.login-window__social
+  display: flex
+  flex-wrap: wrap
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width 50%
+  @media all and (max-width $screenWidth)
+    padding: 25px 0
+    width 300px
+
+
+.login-window__social-login-button
+  display: flex
+  align-items: center
+  box-sizing: border-box
+  width 300px
+  height 40px
+  border: none
+  border-radius: 3px;
+  color: #fff
+  padding 0
+  
+  &:first-child
+    margin-bottom 20px
+
+.facebook-logo
+  margin-left: 15px
+  height 22px
+  filter: invert(1);
+
+.google-plus-logo
+  margin-left: 15px
+  height 31px
+  filter: invert(1);
+
+.button__value
+  flex-grow: 1
+  text-align: center
+
+
+/* mixins */
+.facebook
+  background-color: #3e5b96;
+
+.google-plus
+  background-color: #dd5342;

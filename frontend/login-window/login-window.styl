@@ -1,0 +1,42 @@
+$screenWidth = 650px;
+$headerHeight = 87px;
+$footerHeight = 87px;
+$minLoginWindowWidth = 320px;
+$maxLoginWindowWidth = 840px;
+$tabletMaxLoginWindowWidth = 480px;
+
+.login-window
+  font-family: Arial, Helvetica, sans-serif
+  display: flex
+  flex-wrap: wrap
+  max-width $maxLoginWindowWidth
+  background-color: #fff
+  box-shadow: 0 2px 1.8px 0.2px rgba(0, 0, 0, 0.25)
+  @media (max-width $screenWidth)
+    min-width $minLoginWindowWidth
+    max-width $tabletMaxLoginWindowWidth 
+
+.login-window__social-and-form-wrapper
+  display: flex
+  justify-content: space-around
+  width 100%
+  padding: 40px 0
+  background-color #f3f3f3
+  @media (max-width $screenWidth)
+    flex-direction: column-reverse
+    padding 21px 0 0 0
+    align-items: center
+
+.greeting
+  font-family: Arial, Helvetica, sans-serif
+  font-size: 100px;
+  color: #000
+  font-weight: bold;
+  text-align: center
+
+
+@require "./__header/login-window__header.styl";
+@require "./__social/login-window__social.styl";
+@require "./__form-container/login-window__form-container.styl";
+@require "./__footer/login-window__footer.styl";
+

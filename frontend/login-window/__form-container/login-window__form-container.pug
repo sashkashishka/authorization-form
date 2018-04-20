@@ -1,0 +1,16 @@
+div.login-window__form-container  
+  form(action="#", class="login-window__form")
+
+    label(for="login", class="login-window__label login-window__label-login", data-validity-msg="") Login
+      input(required=true, type="text", class="input login-window__input login-window__input-login", id="login", name="login")
+
+    label(for="password", class="login-window__label login-window__label-password") Password
+      input(required=true, minlength=8, type="password", class="input login-window__input login-window__input-password", id="password", name="password")
+
+    label(for="remember-me", class="login-window__label login-window__label_width_max login-window__label_align-content_middle") 
+      input(type="checkbox", id="remember-me", class="checkbox login-window__checkbox-remember-me", checked=true) 
+      | Remember me
+
+    input(class="button login-window__log-in-button", type="submit", value="Log in")
+    
+    a(href="#", class="link login-window__link login-window__link_size_s") Need help logging in?
